@@ -28,6 +28,31 @@ let myObj = {
 };
 
 const myFunction = function () {
-    console.log("Hello World");
-}
-    console.log(typeof bigNumber);
+  console.log("Hello World");
+};
+console.log(typeof bigNumber);
+
+// ************************
+
+// Stack(primitive),  Heap(non-primitive)
+
+let sanjayLama = "developer";
+
+let anotherName = sanjayLama;
+
+anotherName = "designer";
+
+console.log({ sanjayLama });
+console.log({ anotherName });
+
+let userOne = {
+  email: "user@heros.com",
+  gmail: "whater@",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "jay@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
