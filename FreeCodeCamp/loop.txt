@@ -12,3 +12,25 @@ const numbers = [1,2,3,4,5];
 for (const num of numbers){
   console.log(num);
 }
+
+We have created a variable called num that will represent the current number in the array. for the iteration 1, num will be 1 for iteration2, num will be 2 , and so on.
+
+Another Example where we have a string and we want to loop over each chracter and log it to the console.
+
+const str = 'freeCodeCamp';
+
+for (let char of str){
+  console.log(char);
+}
+
+in this example, we have created a variable called [char] that will represent the current in the string.
+
+
+Here is the example of using [const] that results in error;
+
+const numbers = [1,2,3,4,5];
+
+for (const num of numbers){
+  console.log(num);
+  num = num + 1;
+}
