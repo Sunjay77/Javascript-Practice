@@ -1,0 +1,14 @@
+A for...og loop is used when you need to loop over values from an iterable. Examples of iterables would be arrays, and strings.
+
+for (varuable of iterable){
+  //code block executed
+}
+
+The variable in the example represents the current value of the iterable that is being lopped over.
+
+In this first example we have an array of numbers and we want to loop over eaxh number and log it to the console.
+
+const numbers = [1,2,3,4,5];
+for (const num of numbers){
+  console.log(num);
+}
