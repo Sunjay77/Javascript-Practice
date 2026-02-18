@@ -37,3 +37,14 @@ do {
 In this example, we have a variable called counter that is initialized to 0. The do...while loop will log the value of the counter to the console and then increment
 counter by 1. After executing the block if code, if checks if the value of counter is less than 5. if it is the loop will continue to run. If not, the loop will stop.
 
+Questions and Answer
+
+
+1. What is the main difference between a while loop and a do...while loop?
+Ans: A do...while loop executes the code block at least once, whereas a while loop does not.
+
+2.In which situation would you prefer to use a do...while loop over a while loop?
+Ans: When you need to execute a block of code at least once before checking the condition
+
+3. What happens if the condition in a while loop is initially false?
+Ans: The code block inside the loop will not execute at all.
