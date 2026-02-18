@@ -50,3 +50,25 @@ for(const person of people){
 In this example, we have an array of objects called people. Each object has a name and age property.
 
 for..of loops are really useful when you need to loop over values from an iterable like an array or a string. They are also easy to read and can make your code more concise.
+
+
+Questions and Answers
+
+1.What will be the output of the following code?
+const colors = ['red' ,'green', 'blue']
+for (const color of colors){
+  console.log(color);
+}
+ans: red green blue will be the output of the following code.
+
+2.What happens if you try to reassign a value to a variable declared with const inside a for...of loop?
+ans:An error will occur.
+
+3.In the following code snippet, what is logged to the console?
+
+const fruits = ['apple', 'banana', 'cherry'];
+
+for (let fruit of fruits) {
+  console.log(fruit.toUpperCase());
+}
+ans: APPLE BANANA CHERRY will will be logged to the console.
