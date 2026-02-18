@@ -1,0 +1,12 @@
+A for..in loop is the best used when you need to loop over the properties if an object. 
+This loop will iterate over all enumerable properties of an object
+including inherited properties and non-numeric properties.
+
+An inherited property is a property that is inherited from the object's prototype chain. A non-numeric property is a property
+that is not a number or a string that can be converted to a number.
+
+here is the basic syntax of a for..in loop
+
+for(variable in object){
+  //code block to be executed
+}
