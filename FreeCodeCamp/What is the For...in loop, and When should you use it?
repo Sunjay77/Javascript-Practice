@@ -96,3 +96,24 @@ A for..in loop is useful when you need to loop over the properties of an object.
 
 it is not recommended to use for..in loop to loop over the elements of an array. instead, use a for...of loop or other array methods like forEach, map, filter, and reduce.
 
+Question and Answer
+
+1. What will be the output of the following code?
+
+const fruit = {
+  name: 'apple',
+  color: 'red',
+  price: 0.99
+};
+
+for (const prop in fruit) {
+  console.log(fruit[prop]);
+}
+
+Ans: apple red 0.991
+
+2.Why is it generally not recommended to use a for...in loop to iterate over the elements of an array?
+Ans: for...in iterates over all enumerable properties, including inherited properties and non-numeric properties, which may lead to unexpected results.
+
+3.Why is the isObject function necessary in the nested loop example?
+Ans: To ensure that the value is neither an array nor null.
