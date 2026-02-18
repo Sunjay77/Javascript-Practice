@@ -34,3 +34,19 @@ for (const num of numbers){
   console.log(num);
   num = num + 1;
 }
+
+Example : 
+
+const people = [
+  {name:'Jhon', age:30}
+  {name:'Jane', age:25}
+  {name:'Jim', age:40}
+];
+
+for(const person of people){
+  console.log(`${person.name} is ${person.age} years old`);
+}
+
+In this example, we have an array of objects called people. Each object has a name and age property.
+
+for..of loops are really useful when you need to loop over values from an iterable like an array or a string. They are also easy to read and can make your code more concise.
