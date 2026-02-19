@@ -55,3 +55,13 @@ The output of this code will log the following to the console:
 
 Most of the time you will not find the need to use labels with the break and continue statements, but it is good to know that you have that option if you ever need it.
 
+Questions & Answer
+
+1. What is the purpose of the break statement in a loop?
+Ans: To exit loop immediately.
+
+2. What happens when the continue statement is encountered inside a loop?
+Ans: The current iteration is skipped and the next iteration starts.
+
+3. What is the purpose if using the labels with break and continuse statements?
+Ans: To specify which loop to exit or skip when dealing with nested loops.
