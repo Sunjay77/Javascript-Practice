@@ -1,0 +1,9 @@
+function findLongestWordLength(str){
+  return str
+  .split(" ")
+  .reduce((max, word) => Math.max (max, word.length), 0);
+}
+
+- split(" ") → converts the sentence into an array of words
+- reduce() → iterates through words
+- Math.max() → keeps track of the longest word length
