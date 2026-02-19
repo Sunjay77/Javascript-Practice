@@ -1,0 +1,21 @@
+function getVowelCount(sentence) {
+  let count = 0;
+  let vowels = "aeiou";
+
+  for (let i = 0; i < sentence.length; i++) {
+    if (vowels.includes(sentence[i].toLowerCase())) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+Loop through each character in the sentence
+Convert character to lowercase
+Check if it exists in "aeiou"
+Increment counter if true
+Return total count
+
+getVowelCount("Hello World"); // 3
+getVowelCount("Programming"); // 3
