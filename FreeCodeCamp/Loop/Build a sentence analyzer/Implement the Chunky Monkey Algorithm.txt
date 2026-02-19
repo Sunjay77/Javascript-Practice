@@ -1,0 +1,13 @@
+/** @format */
+
+function chunkArrayInGroups(arr, num) {
+  let result = [];
+  for (let i = 0; i < arr.length; i += num) {
+    result.push(arr.slice(i, i + num));
+  }
+  return result;
+}
+Loop through the array in steps of num
+Use slice(i, i + num) to create each chunk
+Push each chunk into result
+Return the final 2D array
