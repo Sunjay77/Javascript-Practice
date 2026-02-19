@@ -1,0 +1,22 @@
+function mutation(arr) {
+  let first = arr[0].toLowerCase();
+  let second = arr[1].toLowerCase();
+
+  for (let i = 0; i < second.length; i++) {
+    if (!first.includes(second[i])) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+1.Convert both strings to lowercase (ignore case).
+2.Loop through every letter of the second string.
+3.Check if the first string includes that letter.
+4.If any letter is missing → return false.
+5.If all letters exist → return true.
+
+mutation(["hello", "Hello"]); // true
+mutation(["hello", "hey"]);   // false
+mutation(["Alien", "line"]);  // true
