@@ -1,0 +1,86 @@
+/** @format */
+
+function getVowelCount(sentence) {
+  let count = 0;
+  let vowels = "aeiou";
+
+  for (let i = 0; i < sentence.length; i++) {
+    if (vowels.includes(sentence[i].toLowerCase())) {
+      count++;
+    }
+  }
+
+  return count;
+}
+const vowelCount = getVowelCount("Apples are tasty fruits");
+console.log(`Vowel Count: ${vowelCount}`);
+
+function getConsonantCount(sentence) {
+  const consonants = "bcdfghjklmnpqrstvwxyz";
+  let count = 0;
+
+  for (const char of sentence.toLowerCase()) {
+    if (consonants.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const consonantCount = getConsonantCount("Coding is fun");
+console.log(`Consonant Count: ${consonantCount}`);
+
+function getPunctuationCount(sentence) {
+  let count = 0;
+
+  for (const char of sentence) {
+    let lower = char.toLowerCase();
+
+    if (char !== " " && !(lower >= "a" && lower <= "z")) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+const punctuationCount = getPunctuationCount("WHAT?!?!?!?!?");
+console.log(`Punctuation Count: ${punctuationCount}`);
+
+function getWordCount(sentence) {
+  if (sentence.trim() === "") return 0;
+
+  return sentence.trim().split(/\s+/).length;
+}
+
+
+Summary
+This JavaScript code defines four utility functions to analyze text:
+1. getVowelCount(sentence)
+Counts vowels (a, e, i, o, u) in a string.
+Converts each character to lowercase for case-insensitive comparison.
+Uses a loop and includes() to increment the count.
+Example: "Apples are tasty fruits".
+2. getConsonantCount(sentence)
+Counts consonants (b–z excluding vowels).
+Iterates using a for...of loop.
+Converts input to lowercase before checking.
+Example: "Coding is fun".
+3. getPunctuationCount(sentence)
+Counts characters that are:
+Not spaces
+Not alphabetic letters (a–z)
+Effectively counts punctuation and symbols.
+Example: "WHAT?!?!?!?!?".
+4. getWordCount(sentence)
+Returns the number of words in a sentence.
+Trims whitespace.
+Splits by one or more spaces using regex (/\s+/).
+Returns 0 for empty input.
+Overall Functionality
+The script performs basic text analysis by calculating:
+Vowel count
+Consonant count
+Punctuation/symbol count
+Word count
+Each function is modular and handles a specific responsibility.
