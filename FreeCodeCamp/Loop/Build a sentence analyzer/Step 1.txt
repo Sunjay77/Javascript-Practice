@@ -28,3 +28,16 @@ function getConsonantCount(sentence) {
 const consonantCount = getConsonantCount("Coding is fun");
 console.log(`Consonant Count: ${consonantCount}`);
 
+function getPunctuationCount(sentence) {
+  let count = 0;
+
+  for (const char of sentence) {
+    let lower = char.toLowerCase();
+
+    if (char !== " " && !(lower >= "a" && lower <= "z")) {
+      count++;
+    }
+  }
+
+  return count;
+}
