@@ -10,12 +10,21 @@ function getVowelCount(sentence) {
 
   return count;
 }
+const vowelCount = getVowelCount("Apples are tasty fruits");
+console.log(`Vowel Count: ${vowelCount}`);
 
-Loop through each character in the sentence
-Convert character to lowercase
-Check if it exists in "aeiou"
-Increment counter if true
-Return total count
+function getConsonantCount(sentence) {
+  const consonants = "bcdfghjklmnpqrstvwxyz";
+  let count = 0;
 
-getVowelCount("Hello World"); // 3
-getVowelCount("Programming"); // 3
+  for (const char of sentence.toLowerCase()) {
+    if (consonants.includes(char)) {
+      count++;
+    }
+  }
+  return count;
+}
+
+const consonantCount = getConsonantCount("Coding is fun");
+console.log(`Consonant Count: ${consonantCount}`);
+
