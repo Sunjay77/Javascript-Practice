@@ -44,10 +44,32 @@ const users = [
   },
 ];
 users[1].email;
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+// console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+const course = {
+  coursename: "js in english",
+  price: "999",
+  courseInstructor: "sunjay",
+};
+
+const { courseInstructor: instructor } = course;
+// console.log(courseInstructor);
+
+// const navbar = () => {};
+// navbar((company = "sunjay")); Object destructure
+
+console.log(instructor);
+
+// {
+//   "name": "sanjay",
+//     "couse": "js in english",
+
+// }
+
+[{}, {}, {}];
